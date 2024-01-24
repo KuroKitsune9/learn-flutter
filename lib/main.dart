@@ -1,4 +1,8 @@
-import 'package:belajar_flutter/container_widget.dart';
+import 'package:belajar_flutter/listView/LatihanList.dart';
+import 'package:belajar_flutter/listView/List_basid.dart';
+import 'package:belajar_flutter/listView/List_builder.dart';
+import 'package:belajar_flutter/listView/list_separated.dart';
+import 'package:belajar_flutter/row_column.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +28,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: BelajarContainer(),
+        body: LatihanList(),
       ),
     );
   }
