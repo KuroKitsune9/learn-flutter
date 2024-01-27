@@ -1,8 +1,11 @@
+import 'package:belajar_flutter/gridview/LatihanGrid.dart';
+import 'package:belajar_flutter/gridview/grid_basix.dart';
+import 'package:belajar_flutter/gridview/grid_builder.dart';
+import 'package:belajar_flutter/gridview/grid_count.dart';
+import 'package:belajar_flutter/gridview/grid_fullscreen1.dart';
+import 'package:belajar_flutter/gridview/grid_fullscreen2.dart';
+import 'package:belajar_flutter/gridview/grid_height_statis.dart';
 import 'package:belajar_flutter/listView/LatihanList.dart';
-import 'package:belajar_flutter/listView/List_basid.dart';
-import 'package:belajar_flutter/listView/List_builder.dart';
-import 'package:belajar_flutter/listView/list_separated.dart';
-import 'package:belajar_flutter/row_column.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,7 +31,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
         ),
-        body: LatihanList(),
+        body: LatihanGrid(),
       ),
     );
   }
