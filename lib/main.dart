@@ -1,11 +1,6 @@
-import 'package:belajar_flutter/gridview/LatihanGrid.dart';
-import 'package:belajar_flutter/gridview/grid_basix.dart';
-import 'package:belajar_flutter/gridview/grid_builder.dart';
-import 'package:belajar_flutter/gridview/grid_count.dart';
-import 'package:belajar_flutter/gridview/grid_fullscreen1.dart';
-import 'package:belajar_flutter/gridview/grid_fullscreen2.dart';
-import 'package:belajar_flutter/gridview/grid_height_statis.dart';
-import 'package:belajar_flutter/listView/LatihanList.dart';
+import 'package:belajar_flutter/screens/menu_screen.dart';
+import 'package:belajar_flutter/screens/second_screen.dart';
+import 'package:belajar_flutter/screens/third_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,20 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.blue[100],
-        appBar: AppBar(
-          centerTitle: true,
-          backgroundColor: Colors.blue[900],
-          title: Text(
-            "Learning basic Flutter",
-            style: TextStyle(
-              color: Colors.blue,
-            ),
-          ),
-        ),
-        body: LatihanGrid(),
-      ),
+      title: "This is my first flutter Project",
+      // home: HomeScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => NavigaitonMenu(),
+        'second': (context) => SecondScreen(),
+        'third': (context) => ThirdScreen()
+      },
     );
   }
 }
